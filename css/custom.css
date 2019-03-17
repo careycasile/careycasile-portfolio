@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -42,11 +43,110 @@ table {
 	border-spacing: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6, ol, ul, li, a, main {
-    font-family: 'Open Sans', sans-serif;
+nav {
+    background-color: #2d3e50;
+    color: white;
+    padding: 1em;
+    line-height: 1.1;
+}
+
+#left-title {
+    font-size: 3em;
 }
 
 #right-title {
-    color:red;
+    text-align: right;
 }
-]
+
+/*NEED TO ADD CONDITIONAL VIDEO SHRINK BY SCREEN SIZE*/
+header {
+  position: relative;
+  background-color: black;
+  height: 50em;
+  min-height: 10em;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 300;
+    color: #2d3e50;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+hr {
+    width: 79%
+}
+
+img {
+    padding: 1.01em;
+}
+
+.project {
+    padding: 1.3em;
+}
+
+.block-div {
+    background-color: #2d3e50;
+    padding: 1.1em;
+}
+
+.white-text {
+    color: white;
+}
+
+#backshape {
+  margin-top: 2em;
+  z-index:1;
+  display:block;
+  width:100%;
+  transform:skew(0deg,5deg);
+-ms-transform:skew(0deg,5deg); /* IE 9 */
+-webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
+}
