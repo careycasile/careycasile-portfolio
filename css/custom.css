@@ -62,7 +62,7 @@ nav {
 header {
   position: relative;
   background-color: black;
-  height: 50em;
+  height: 40em;
   min-height: 10em;
   width: 100%;
   overflow: hidden;
@@ -137,16 +137,35 @@ img {
     padding: 1.1em;
 }
 
+.block-div-grey {
+    background-color: #dcdbdb;
+    padding: 1.1em;
+}
+
 .white-text {
     color: white;
 }
 
-#backshape {
-  margin-top: 2em;
+.blue-text {
+    color: #2d3e50;
+}
+
+.backshape {
+  padding-top: 2em;
+  padding-bottom: 2.5em;
   z-index:1;
   display:block;
   width:100%;
-  transform:skew(0deg,5deg);
--ms-transform:skew(0deg,5deg); /* IE 9 */
--webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
+  transform:skew(0deg,2.5deg);
+-ms-transform:skew(0deg,2.5deg); /* IE 9 */
+-webkit-transform:skew(0deg,2.5deg); /* Safari and Chrome */
+}
+
+.backshape-reverse {
+  z-index:1;
+  display:block;
+  width:100%;
+  transform:skew(0deg,-2.5deg);
+-ms-transform:skew(0deg,-2.5deg); /* IE 9 */
+-webkit-transform:skew(0deg,-2.5deg); /* Safari and Chrome */
 }
