@@ -142,6 +142,11 @@ img {
     padding: 1.1em;
 }
 
+.block-div-white {
+    background-color: white;
+    padding: 1.1em;
+}
+
 .white-text {
     color: white;
 }
@@ -169,3 +174,21 @@ img {
 -ms-transform:skew(0deg,-2.5deg); /* IE 9 */
 -webkit-transform:skew(0deg,-2.5deg); /* Safari and Chrome */
 }
+
+.project p, .experience p {
+    max-width: 30em;
+}
+
+.project-div {
+    padding-bottom: 3em;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    max-width: 13em;
+    padding: 3px;
+}
+
